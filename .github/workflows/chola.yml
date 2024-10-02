@@ -1,0 +1,15 @@
+name: chola
+on: push
+jobs:
+  micheal-jackson:
+    runs-on: ubuntu-20.04
+    steps:
+    - name: copying the repo
+      uses: actions/checkout@v4
+    - name:  hello world
+      run:  echo "hello world"
+    - name: list file
+      run : ls
+    - name:  Display command
+      run : cat README.md
+
