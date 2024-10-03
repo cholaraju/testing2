@@ -8,6 +8,12 @@ jobs:
        run: sudo apt-get install cowsay -y
      - name:  Execute cowsay cmd
        run: cowsay -f dragon "Tharun dragon lafoot ga" >>dragon.txt
+     - name: uplading artifact
+       uses: actions/upload-artifact@v4
+       with:
+         name: my-artifact
+         path: dragon.txt
+       
   neabba:
     needs: fuck_you
     runs-on: ubuntu-latest
@@ -16,6 +22,11 @@ jobs:
        run: sleep 10
      - name: test file
        run: grep -i "dragon" dragon.txt
+     - name: download artifact
+       uses: actions/upload-artifact@v4
+       with:
+        name: my-artifact
+        path: dragon.txt
 
   tharun-kattappa:
     needs: [neabba,fuck_you]
@@ -23,3 +34,9 @@ jobs:
     steps:
       - name: read the file
         run: cat  dragon.txt
+    
+      - name: download artifact
+        uses: actions/upload-artifact@v4
+        with:
+         name: my-artifact
+         path: dragon.txt
