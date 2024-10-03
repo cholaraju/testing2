@@ -20,13 +20,13 @@ jobs:
     steps:
      - name: sleep for 10 seconds
        run: sleep 10
-     - name: test file
-       run: grep -i "dragon" dragon.txt
      - name: download artifact
        uses: actions/download-artifact@v4
        with:
-        name: my-artifact
-      
+          name: my-artifact
+        
+     - name: test file
+       run: grep -i "dragon" dragon.txt
 
   tharun-kattappa:
     needs: [neabba,fuck_you]
