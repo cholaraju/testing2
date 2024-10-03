@@ -23,20 +23,20 @@ jobs:
      - name: test file
        run: grep -i "dragon" dragon.txt
      - name: download artifact
-       uses: actions/upload-artifact@v4
+       uses: actions/download-artifact@v4
        with:
         name: my-artifact
-        path: dragon.txt
+      
 
   tharun-kattappa:
     needs: [neabba,fuck_you]
     runs-on: ubuntu-latest
     steps:
+      - name: download artifact
+        uses: actions/download-artifact@v4
+        with:
+         name: my-artifact
       - name: read the file
         run: cat  dragon.txt
     
-      - name: download artifact
-        uses: actions/upload-artifact@v4
-        with:
-         name: my-artifact
-         path: dragon.txt
+        
