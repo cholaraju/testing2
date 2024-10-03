@@ -9,6 +9,7 @@ jobs:
      - name:  Execute cowsay cmd
        run: cowsay -f dragon "Tharun dragon lafoot ga" >>dragon.txt
   neabba:
+    needs: fuck_you
     runs-on: ubuntu-latest
     steps:
      - name: sleep for 10 seconds
@@ -17,6 +18,7 @@ jobs:
        run: grep -i "dragon" dragon.txt
 
   tharun-kattappa:
+    needs: [neabba,fuck_you]
     runs-on: ubuntu-latest
     steps:
       - name: read the file
