@@ -13,8 +13,8 @@ jobs:
 
       - name: executing shell command
         run: |
-         chmod +x  chola-script.sh
-         ./chola-script.sh
+          chmod +x  chola-script.sh
+          ./chola-script.sh
 
 
 
