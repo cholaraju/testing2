@@ -7,9 +7,14 @@ jobs:
     - name: copying the repo
       uses: actions/checkout@v4
     - name:  hello world
-      run:  echo "hello world"
-    - name: list file
-      run : ls
-    - name:  Display command
-      run : cat README.md
+      run: |
+          echo "hello world"
+          ls -ltra
+          cat README.md
+    - name: Generate ASCII Artwork
+      run : cowsay -f dragon "Tharun ga lafoot" >> dragon.txt
+    # - name: list file
+    #   run : ls
+    # - name:  Display command
+    #   run : cat README.md
 
