@@ -2,7 +2,7 @@ name: Tharun workflow
 on: push
 
 jobs: 
-    tharun_blow_job:
+    tharun_job:
       runs-on: ubuntu-latest
       steps:
         - name: checkout repo
