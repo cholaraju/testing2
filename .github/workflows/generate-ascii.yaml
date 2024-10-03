@@ -13,7 +13,7 @@ jobs:
 
         
         - name: execute cowsay cmd
-          run: cowsay -f elephant  "tharun loves ELEPHANT hemanth" >> dragon.txt
+          run: cowsay -f elephant  "tharun loves elephant hemanth" >> dragon.txt
 
         - name: test file exists
           run: grep -i "elephant" dragon.txt
