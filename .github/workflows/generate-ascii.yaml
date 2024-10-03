@@ -12,8 +12,11 @@ jobs:
           run:  ls -ltra
 
         - name: executing shell command
-          run:  chola-script.sh
+          run:  |
+             chmod +x chola-script.sh
+             chola-script.sh
+             
 
-          
+
            
           
