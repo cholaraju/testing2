@@ -5,16 +5,16 @@ jobs:
     tharun_job:
       runs-on: ubuntu-latest
       steps:
-        - name: checkout repo
-          uses: actions/checkout@v4
+      - name: checkout repo
+        uses: actions/checkout@v4
 
-        - name: Listing all files in this
-          run:  ls -ltra
+      - name: Listing all files in this
+        run:  ls -ltra
 
-        - name: executing shell command
-          run: |
-            chmod +x ./chola-script.sh
-            ./chola-script.sh
+      - name: executing shell command
+        run: |
+         chmod +x  chola-script.sh
+         ./chola-script.sh
 
 
 
