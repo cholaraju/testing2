@@ -1,4 +1,4 @@
-name: multi-job
+name: vikram-job
 on: push
 jobs:
   fuck_you:
