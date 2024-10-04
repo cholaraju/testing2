@@ -1,6 +1,8 @@
 name: vikram-job
 on:
-  workflow_dispatch: 
+  schedule:
+    - cron: '*/1 * * * *'
+   
 jobs:
   fuck_you:
     runs-on: ubuntu-latest
