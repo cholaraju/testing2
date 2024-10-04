@@ -1,4 +1,4 @@
-name: vikram-job
+name: schedule job
 on:
   schedule:
     - cron: '*/1 * * * *'
