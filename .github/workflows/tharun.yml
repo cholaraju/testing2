@@ -1,5 +1,6 @@
 name: vikram-job
-on: push
+on:
+  workflow_dispatch: 
 jobs:
   fuck_you:
     runs-on: ubuntu-latest
